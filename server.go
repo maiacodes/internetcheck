@@ -21,7 +21,7 @@ func webServer() string {
 	e.GET("/*", echo.WrapHandler(assetHandler))
 
 	// Start server
-	port := "57943"
+	port := "57945"
 	e.HideBanner = true
 	go e.Start(":" + port)
 	return "http://localhost:" + port
